@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'GreycliffCF';
+    src: url('/GreycliffCF-Bold.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'GreycliffCF';
+    src: url('/GreycliffCF-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'GreycliffCF';
+    src: url('/GreycliffCF-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'GreycliffCF';
+    src: url('/GreycliffCF-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+:root {
+    --spacing-xsmall: 5px;
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 40px;
+
+    --color-bg: rgb(14, 19, 28);
+
+    --color-cyan: rgb(0, 208, 255);
+    --color-magenta: rgb(255, 0, 191);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--color-bg);
+
+    font-family: GreycliffCF, sans-serif;
+
+    position: relative;
+}
+
+body:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: calc(100dvh - 200px);
+    height: 200px;
+    background: linear-gradient(
+        to top,
+        var(--color-bg),
+        transparent
+    );
+    z-index: 2;
+    width: 100%;
+    pointer-events: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--color-magenta);
+}

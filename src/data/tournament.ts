@@ -1,0 +1,66 @@
+import type { TournamentRound } from '../types/Tournament'
+import mangas from './mangas'
+
+const tournament: TournamentRound = {
+    type: 'match',
+    a: {
+        type: 'match',
+        a: {
+            type: 'match',
+            a: {
+                type: 'match',
+                a: { type: 'seed', manga: mangas[0] },
+                b: { type: 'seed', manga: mangas[1] },
+            },
+            b: {
+                type: 'match',
+                a: { type: 'seed', manga: mangas[2] },
+                b: { type: 'seed', manga: mangas[3] },
+            },
+        },
+        b: {
+            type: 'match',
+            a: {
+                type: 'match',
+                a: { type: 'seed', manga: mangas[4] },
+                b: { type: 'seed', manga: mangas[5] },
+            },
+            b: {
+                type: 'match',
+                a: { type: 'seed', manga: mangas[6] },
+                b: { type: 'seed', manga: mangas[7] },
+            },
+        },
+    },
+    b: {
+        type: 'match',
+        a: {
+            type: 'match',
+            a: {
+                type: 'match',
+                a: { type: 'seed', manga: mangas[8] },
+                b: { type: 'seed', manga: mangas[9] },
+            },
+            b: {
+                type: 'match',
+                a: { type: 'seed', manga: mangas[10] },
+                b: { type: 'seed', manga: mangas[11] },
+            },
+        },
+        b: {
+            type: 'match',
+            a: {
+                type: 'match',
+                a: { type: 'seed', manga: mangas[12] },
+                b: { type: 'seed', manga: mangas[13] },
+            },
+            b: {
+                type: 'match',
+                a: { type: 'seed', manga: mangas[14] },
+                b: { type: 'seed', manga: mangas[15] },
+            },
+        },
+    },
+}
+
+export default tournament
