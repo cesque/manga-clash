@@ -55,7 +55,7 @@ body:before {
         var(--color-bg),
         transparent
     );
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     pointer-events: none;
 }

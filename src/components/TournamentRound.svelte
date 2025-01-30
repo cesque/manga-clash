@@ -36,6 +36,7 @@
         left: 50%;
         translate: -50% -50%;
         transition: scale 0.3s ease;
+        z-index: 1;
 
         .isUltimateWinner & {
             scale: 1.5;
@@ -43,7 +44,7 @@
 
         &:hover {
             scale: 2;
-            z-index: 1;
+            z-index: 2;
         }
     }
     

@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        z-index: 2;
+        z-index: 4;
         position: relative;
         font-weight: 300;
         font-size: 0.8rem;
