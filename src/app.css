@@ -60,7 +60,7 @@ body:before {
     pointer-events: none;
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 

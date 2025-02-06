@@ -93,28 +93,64 @@
     tubes.splice(centreColumn, 1)
 </script>
 
-<Heading>Tournament bracket</Heading>
+<div class="desktop-only">
+    <Heading>Tournament bracket</Heading>
 
-<div class='tournament' style="--columns: {(amountOfColumns * 2) - 1}; --rows: {totalRows}">
-    {#each columnsWithDepthInformation as column, i}
-        {#each column as round}
-            <div class="round" style:grid-column="{(i * 2) + 1} / span 1" style:grid-row="{round.row + 1} / span 1">
-                <TournamentRound round={round.round} isUltimateWinner={round.isUltimateWinner} />
-            </div>
+    <div class='tournament' style="--columns: {(amountOfColumns * 2) - 1}; --rows: {totalRows}">
+        {#each columnsWithDepthInformation as column, i}
+            {#each column as round}
+                <div class="round" style:grid-column="{(i * 2) + 1} / span 1" style:grid-row="{round.row + 1} / span 1">
+                    <TournamentRound round={round.round} isUltimateWinner={round.isUltimateWinner} />
+                </div>
+            {/each}
         {/each}
-    {/each}
 
-    {#each tubes as items, i}
-        {#each items as item}
-            <div class="line-item" style:grid-column="{(i * 2) + 2} / span 1" style:grid-row="{item.row + 1} / span 1" style:--column={i}>
-                <div class={['line', item.type]}></div>
-            </div>
+        {#each tubes as items, i}
+            {#each items as item}
+                <div class="line-item" style:grid-column="{(i * 2) + 2} / span 1" style:grid-row="{item.row + 1} / span 1" style:--column={i}>
+                    <div class={['line', item.type]}></div>
+                </div>
+            {/each}
         {/each}
-    {/each}
+    </div>
+</div>
+
+<div class="mobile-only">
+    <p>This webpage is optimised for desktop viewing. To view the current tournament bracket, please visit this page on a desktop computer.</p>
 </div>
 
 <style>
+    .desktop-only {
+        display: none;
+        width: 100%;
+        overflow-x: auto;
+
+        @media (min-width: 600px) {
+            display: block;
+        }
+    }
+
+    .mobile-only {
+        display: block;
+
+        @media (min-width: 600px) {
+            display: none;
+        }
+
+        p {
+            margin: 0 auto;
+            padding: var(--spacing-large);
+            text-align: center;
+            text-wrap-style: balance;
+            color: #959595;
+            font-size: 1.2rem;
+            text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+        }
+    }
+
     .tournament {
+        min-width: 800px;
+
         padding: var(--spacing-large);
         display: grid;
         grid-template-rows: repeat(var(--rows), 1fr);
@@ -125,7 +161,6 @@
     }
 
     .round {
-        color: white;
         text-align: center;
     }
 

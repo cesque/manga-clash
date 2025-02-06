@@ -26,14 +26,19 @@
         padding: 0;
 
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: var(--spacing-small) var(--spacing-medium);
+        padding: var(--spacing-medium);
 
         width: 100%;
         max-width: 900px;
         margin: 0 auto;
 
         margin-bottom: 25dvh;
+
+        @media (min-width: 800px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .row {
