@@ -17,30 +17,39 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 200px;
+        height: 40px;
         background: linear-gradient(
             to top,
             var(--color-bg),
             transparent
         );
         z-index: 1;
+
+        @media (min-width: 600px) {
+            display: block;
+            height: 200px;
+        }
     }
 
-    header:after {
+    /* header:after {
         content: '';
         display: block;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 200px;
+        height: 40px;
         background: linear-gradient(
             to bottom,
             var(--color-bg),
             transparent
         );
         z-index: 1;
-    }
+
+        @media (min-width: 600px) {
+            height: 200px;
+        }
+    } */
 
     video {
         mix-blend-mode: lighten;
