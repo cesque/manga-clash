@@ -48,6 +48,7 @@
 
 <style>
     .container {
+        --bg: #002e3f;
         position: relative;
 
         display: flex;
@@ -65,7 +66,7 @@
     }
 
     .inner {
-        animation:  card-rotate 2s var(--alternate) infinite ease-in-out;
+        animation: card-rotate 2s var(--alternate) infinite ease-in-out;
     }
 
     .image-container {
@@ -146,7 +147,14 @@
 
     @keyframes card-spin {
         from { transform: rotateY(-20deg); }
-        to { transform: rotateY(1800deg); }
+        to { transform: rotateY(1080deg); }
+    }
+
+    @keyframes motion-blur {
+        0% { filter: blur(0); }
+        25% { filter: blur(2px) brightness(3); }
+        75% { filter: blur(2px) brightness(3); }
+        100% { filter: blur(0); }
     }
 
     @keyframes move-noise {
@@ -163,6 +171,8 @@
     }
 
     .container.revealed {
+        animation: motion-blur 2s ease-in-out;
+
         .inner {
             animation: card-spin 2s ease-in-out;
         }
