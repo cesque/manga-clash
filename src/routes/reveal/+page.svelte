@@ -2,8 +2,8 @@
     import RevealManga from '../../components/reveal/RevealManga.svelte';
 import mangas from '../../data/mangas'
 
-    const manga1 = mangas.find(x => x.name == `Arte`)!
-    const manga2 = mangas.find(x => x.name == `Rooster Fighter`)!
+    const manga1 = mangas[0]
+    const manga2 = mangas[1]
 
     let revealed = $state(false)
 </script>

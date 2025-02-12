@@ -2,12 +2,30 @@
     import mangas from '../data/mangas'
     import Heading from './Heading.svelte'
     import Manga from './Manga.svelte'
+    import type { Manga as MangaType } from '../types/Manga'
+
+    function randomise(a: MangaType[]) {
+        const result: MangaType[] = []
+
+        const clone = a.slice()
+
+        while(clone.length) {
+            const i = Math.floor(Math.random() * clone.length)
+
+            const element = clone.splice(i, 1)
+            result.push(element[0])
+        }
+
+        return result
+    }
+
+    const randomOrderMangas = $derived(randomise(mangas))
 </script>
 
 <Heading>Mangas</Heading>
 
 <ul class="container">
-    {#each mangas as manga}
+    {#each randomOrderMangas as manga}
         <li class={['row', { revealed: manga.isRevealed, eliminated: manga.isEliminated }]}>
             <Manga manga={manga} />
             {#if manga.isRevealed}

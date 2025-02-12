@@ -58,15 +58,17 @@
     .left {
         transform: rotateY(10deg);
         --alternate: alternate;
+        --rotate: 30deg;
     }
 
     .right {
         transform: rotateY(-10deg);
         --alternate: alternate-reverse;
+        --rotate: -30deg;
     }
 
     .inner {
-        animation: card-rotate 2s var(--alternate) infinite ease-in-out;
+        animation: card-rotate 2s alternate infinite ease-in-out;
     }
 
     .image-container {
@@ -141,8 +143,8 @@
     }
 
     @keyframes card-rotate {
-        from { transform: rotateY(-20deg); }
-        to { transform: rotateY(20deg); }
+        from { transform: rotateY(0deg); }
+        to { transform: rotateY(var(--rotate)); }
     }
 
     @keyframes card-spin {
@@ -190,6 +192,10 @@
         .noise {
             transition: opacity 2.5s ease-in;
             opacity: 0.3;
+
+            svg {
+                animation: none;
+            }
         }
 
         h2 {
