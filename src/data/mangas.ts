@@ -5,14 +5,14 @@ const mangas: Manga[] = [
         "name": "Arte",
         "image": "cf48897c-3e3a-4986-baf9-abed41e7fa28.png",
         "silhouette": "d6b3981c-d05e-4b78-b308-99905ce336c8.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
         "name": "Trillion Game",
         "image": "f361475b-245a-4b90-b979-e72e523d1d13.png",
         "silhouette": "9874edc1-55f1-4a85-8012-cc15882e9714.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
