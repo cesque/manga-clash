@@ -6,7 +6,7 @@ const mangas: Manga[] = [
         "image": "cf48897c-3e3a-4986-baf9-abed41e7fa28.png",
         "silhouette": "d6b3981c-d05e-4b78-b308-99905ce336c8.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "Trillion Game",
@@ -19,14 +19,14 @@ const mangas: Manga[] = [
         "name": "Rooster Fighter",
         "image": "ccaf2145-38ac-4e16-a45c-f6fcce3f91fa.jpg",
         "silhouette": "0a2b51c6-032b-4d1c-967f-d8073f6ea87c.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
         "name": "Sheeply Horned Witch Romi",
         "image": "331442cb-5cb2-49c0-9e77-0c1536d34286.jpg",
         "silhouette": "ea28de6b-3e56-47fd-8a56-65194e5e4705.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
