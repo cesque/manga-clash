@@ -1,4 +1,5 @@
 <script lang="ts">
+    import ClashResult from '../components/ClashResult.svelte';
     import Footer from '../components/Footer.svelte'
     import Header from '../components/Header.svelte'
     import Heading from '../components/Heading.svelte'
@@ -7,6 +8,7 @@
     import Tournament from '../components/Tournament.svelte'
 
     import tournament from '../data/tournament'
+    import mangas from '../data/mangas'
 </script>
 
 <Hero />
@@ -42,6 +44,26 @@
     <p class="footnote">* Out of the ones we've randomly picked.</p>
 </div>
 
+<Heading>Round 1</Heading>
+
+
+<div class="description">
+    <ClashResult a={mangas[0]} b={mangas[1]} />
+
+    <p>
+        A decisive battle! Our very first Manga Clash started strong, pitting
+        the Renaissance art-romance <i>Arte</i> against the absurd business-comedy <i>Trillion Game</i>.
+    </p>
+    <p>
+        <b>Arte</b>'s art was held in high esteem, but its failure to paint vivid enough portraits
+        of its characters left some readers with the impression that it was merely... <em>"fine"</em>.
+    </p>
+    <p>
+        However, <b>Trillion Game</b> cashed in on its absurd comedic writing, and ultimately
+        avoided paying the price for its relatively poor visual style, as it won gold in the
+        first ever <b>Manga Clash</b> vote and proceeded through to the second stage.
+</div>
+
 <Footer />
 
 <style>
@@ -74,7 +96,7 @@
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: white;
         line-height: 1.3;
         font-weight: 300;
@@ -87,6 +109,14 @@
         i {
             color: var(--color-cyan);
             text-shadow: 0 0 10px var(--color-cyan);
+        }
+
+        b {
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+
+        @media (min-width: 600px) {
+            font-size: 1.5rem;
         }
     }
 

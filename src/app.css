@@ -27,6 +27,7 @@
     --spacing-small: 10px;
     --spacing-medium: 20px;
     --spacing-large: 40px;
+    --spacing-xlarge: 80px;
 
     --color-bg: rgb(14, 19, 28);
 
@@ -48,7 +49,7 @@ body:before {
     content: '';
     display: block;
     position: fixed;
-    top: calc(100dvh - 200px);
+    bottom: 0;
     height: 200px;
     background: linear-gradient(
         to top,

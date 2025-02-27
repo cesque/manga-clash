@@ -1,6 +1,6 @@
 <script lang="ts">
     import RevealManga from '../../components/reveal/RevealManga.svelte';
-import mangas from '../../data/mangas'
+    import mangas from '../../data/mangas'
 
     const manga1 = mangas[2]
     const manga2 = mangas[3]
