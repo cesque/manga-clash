@@ -4,6 +4,8 @@
     import Manga from './Manga.svelte'
     import type { Manga as MangaType } from '../types/Manga'
 
+    // something weird was happening when randomising the list
+    // so not using this for now lmao
     function randomise(a: MangaType[]) {
         const result: MangaType[] = []
 
@@ -19,7 +21,15 @@
         return result
     }
 
-    const randomOrderMangas = $derived(randomise(mangas))
+    function sort(a: MangaType[]) {
+        const clone = a.slice()
+        clone.sort((a, b) => {
+            return a.name.localeCompare(b.name)
+        })
+        return clone
+    }
+
+    const randomOrderMangas = $derived(sort(mangas))
 </script>
 
 <Heading>Mangas</Heading>
