@@ -21,19 +21,19 @@
         return result
     }
 
-    function sort(a: MangaType[]) {
-        const clone = a.slice()
-        clone.sort((a, b) => {
-            return a.name.localeCompare(b.name)
-        })
-        return clone
-    }
+    // function sort(a: MangaType[]) {
+    //     const clone = a.slice()
+    //     clone.sort((a, b) => {
+    //         return a.name.localeCompare(b.name)
+    //     })
+    //     return clone
+    // }
 
-    const randomOrderMangas = $derived(sort(mangas))
+    const randomOrderMangas = $derived(randomise(mangas))
 </script>
 
 <Heading>Mangas</Heading>
-
+{#key randomOrderMangas}
 <ul class="container">
     {#each randomOrderMangas as manga}
         <li class={['row', { revealed: manga.isRevealed, eliminated: manga.isEliminated }]}>
@@ -46,6 +46,8 @@
         </li>
     {/each}
 </ul>
+{/key}
+
 
 <style>
     .container {
