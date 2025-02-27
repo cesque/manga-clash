@@ -6,36 +6,36 @@
 
     // something weird was happening when randomising the list
     // so not using this for now lmao
-    function randomise(a: MangaType[]) {
-        const result: MangaType[] = []
+    // function randomise(a: MangaType[]) {
+    //     const result: MangaType[] = []
 
-        const clone = a.slice()
-
-        while(clone.length) {
-            const i = Math.floor(Math.random() * clone.length)
-
-            const element = clone.splice(i, 1)
-            result.push(element[0])
-        }
-
-        return result
-    }
-
-    // function sort(a: MangaType[]) {
     //     const clone = a.slice()
-    //     clone.sort((a, b) => {
-    //         return a.name.localeCompare(b.name)
-    //     })
-    //     return clone
+
+    //     while(clone.length) {
+    //         const i = Math.floor(Math.random() * clone.length)
+
+    //         const element = clone.splice(i, 1)
+    //         result.push(element[0])
+    //     }
+
+    //     return result
     // }
 
-    const randomOrderMangas = $derived(randomise(mangas))
+    function sort(a: MangaType[]) {
+        const clone = a.slice()
+        clone.sort((a, b) => {
+            return a.name.localeCompare(b.name)
+        })
+        return clone
+    }
+
+    const sortedMangas = $derived(sort(mangas))
 </script>
 
 <Heading>Mangas</Heading>
-{#key randomOrderMangas}
+{#key sortedMangas}
 <ul class="container">
-    {#each randomOrderMangas as manga}
+    {#each sortedMangas as manga}
         <li class={['row', { revealed: manga.isRevealed, eliminated: manga.isEliminated }]}>
             <Manga manga={manga} />
             {#if manga.isRevealed}
