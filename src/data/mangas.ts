@@ -27,20 +27,20 @@ const mangas: Manga[] = [
         "image": "331442cb-5cb2-49c0-9e77-0c1536d34286.jpg",
         "silhouette": "ea28de6b-3e56-47fd-8a56-65194e5e4705.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "COSMOS",
         "image": "bd4bfb51-a057-4e38-88b2-042006337c9a.jpg",
         "silhouette": "8e4dbf7e-720c-4cca-b0c5-2ca7e4680790.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
         "name": "Hana wa Saku, Shura no Gotoku",
         "image": "6f349aac-7a47-4069-b33b-d409f8d72355.jpg",
         "silhouette": "f50fbc30-5c35-418d-b125-c2febd11c98a.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
