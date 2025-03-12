@@ -71,7 +71,7 @@
     <ClashResult a={mangas[2]} b={mangas[3]} />
 
     <p>
-        Back once again, and this time with a distinctively farmyard-themed clash!
+        Back once again, and this time with a distinctly farmyard-themed Manga Clash!
     </p>
     <p>
         That's right: this week we judged the lewd-ish horror comedy high school

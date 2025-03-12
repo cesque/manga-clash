@@ -41,20 +41,20 @@ const mangas: Manga[] = [
         "image": "6f349aac-7a47-4069-b33b-d409f8d72355.jpg",
         "silhouette": "f50fbc30-5c35-418d-b125-c2febd11c98a.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "Kindergarten WARS",
         "image": "f1fea6ac-d4fd-46d4-bd7f-b3f2d7b2d9ab.jpg",
         "silhouette": "b2c4924d-d765-4b1b-be79-e8d814a8d70c.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
         "name": "Shoukoku no Altair",
         "image": "a982b80e-ef85-4714-98f7-84425ccdfb2f.png",
         "silhouette": "53c6e791-06d2-47a6-b96a-1b65bc27c3f4.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {

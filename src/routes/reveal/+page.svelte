@@ -2,8 +2,8 @@
     import RevealManga from '../../components/reveal/RevealManga.svelte';
     import mangas from '../../data/mangas'
 
-    const manga1 = mangas[4]
-    const manga2 = mangas[5]
+    const manga1 = mangas[6]
+    const manga2 = mangas[7]
 
     let revealed = $state(false)
 </script>
