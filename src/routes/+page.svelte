@@ -62,6 +62,29 @@
         However, <b>Trillion Game</b> cashed in on its absurd comedic writing, and ultimately
         avoided paying the price for its relatively poor visual style, as it won gold in the
         first ever <b>Manga Clash</b> vote and proceeded through to the second stage.
+    </p>
+</div>
+
+<div class="description">
+    <ClashResult a={mangas[2]} b={mangas[3]} />
+
+    <p>
+        Back once again, and this time with a distinctively farmyard-themed clash!
+    </p>
+    <p>
+        That's right: this week we judged the lewd-ish horror comedy high school
+        art psychological slice of life manga <i>Sheeply Horned Witch Romi</i>,
+        whose name prompted mild confusion amongst our delegates, against the
+        absurd-but-takes-itself-too-seriously <i>Rooster Fighter</i>, whose name
+        couldn't be more on the nose. Or... beak?
+    <p>
+    <p>
+        Though its visual appeal earned some praise, <b>Sheeply Horned Witch Romi</b>'s
+        somewhat uncomfortable sex drive left a sour taste for some. 
+        Thus, <b>Rooster Fighter</b> ended up taking out its opponent in a single
+        "resonance blast", with its humour and commitment to the bit shining
+        through.
+    </p>
 </div>
 
 <Footer />
