@@ -100,8 +100,11 @@
         transform: rotateY(25deg);
     }
 
-    .manga.isWinner {
+    .manga:nth-child(2) {
         transform: rotateY(-25deg);
+    }
+
+    .manga.isWinner {
         scale: 0.95;
         transition: scale 1s ease;
 

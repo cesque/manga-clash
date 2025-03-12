@@ -65,6 +65,8 @@
     </p>
 </div>
 
+<Heading>Round 2</Heading>
+
 <div class="description">
     <ClashResult a={mangas[2]} b={mangas[3]} />
 
