@@ -48,7 +48,7 @@
         justify-content: center;
         gap: var(--spacing-medium);
         margin-bottom: var(--spacing-xlarge);
-        background: radial-gradient(100% 20px, white);
+        background: radial-gradient(100% 20px, transparent);
 
         perspective: 800px;
 

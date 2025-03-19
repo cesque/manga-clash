@@ -89,6 +89,27 @@
     </p>
 </div>
 
+<Heading>Round 3</Heading>
+
+<div class="description">
+    <ClashResult a={mangas[4]} b={mangas[5]} />
+
+    <p>
+        Round 3 of Manga Clash saw the comfy broadcasting-club coming-of-age
+        story <i>Hana wa Saku, Shura no Gotoku</i> face off against stylish
+        sci-fi insurance drama <i>COSMOS</i>—both manga offering similarly niche
+        plot concepts.
+    </p>
+    <p>
+        We found a lot to like in both of these titles. <b>Hana wa Saku, Shura
+        no Gotoku</b> offered a cute premise, though its queer-baiting served as
+        both a blessing and a curse. <b>COSMOS<b> was compared, not unfavourably,
+        to the first Men in Black movie, and ultimately its plot proved gripping
+        enough that we were itching to find out what happens next. And so, it
+        claimed victory, and ensured a spot in the next round!
+    </p>
+</div>
+
 <Footer />
 
 <style>
