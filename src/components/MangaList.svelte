@@ -32,7 +32,8 @@
     const sortedMangas = $derived(sort(mangas))
 </script>
 
-<Heading>Mangas</Heading>
+<Heading>Manga</Heading>
+
 {#key sortedMangas}
 <ul class="container">
     {#each sortedMangas as manga}
@@ -47,7 +48,6 @@
     {/each}
 </ul>
 {/key}
-
 
 <style>
     .container {

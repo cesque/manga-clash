@@ -69,6 +69,8 @@
 
     .inner {
         animation: card-rotate 2s alternate infinite ease-in-out;
+        display: flex;
+        flex-direction: column;
     }
 
     .image-container {
@@ -170,6 +172,7 @@
         font-size: 2rem;
         filter: blur(20px);
         text-shadow: 0 0 10px var(--color-cyan);
+        max-width: 450px;
     }
 
     .container.revealed {
