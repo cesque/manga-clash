@@ -1,13 +1,16 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-    import type { Manga } from '../types/Manga'
+    import { onMount } from 'svelte'
+    import type { TournamentMatch } from '../types/Tournament'
+    import getMangaFromRound from '../utils/Tournament/getMangaFromRound'
 
     type Props = {
-        a: Manga,
-        b: Manga,
+        match: TournamentMatch
     }
 
-    const { a, b }: Props = $props()
+    const { match }: Props = $props()
+
+    const a = getMangaFromRound(match.a)
+    const b = getMangaFromRound(match.b)
 
     let element: HTMLDivElement
 
@@ -21,9 +24,9 @@
 
         const observer = new IntersectionObserver((entries, observer) => {
             for (const entry of entries) {
-                if (entry.isIntersecting) isVisible = true
+                if (entry.isIntersecting) isVisible = true;
             }
-        }, options);
+        }, options)
 
         observer.observe(element)
 
@@ -33,14 +36,16 @@
     })
 </script>
 
-<div class={['clash-result', { isVisible }]} bind:this={element}>
-    <div class={['manga', { isLoser: a.isEliminated, isWinner: !a.isEliminated }]}>
-        <img class="cover" src="/manga/revealed/{a.image}" alt="a manga" />
+{#if a && b}
+    <div class={["clash-result", { isVisible }]} bind:this={element}>
+        <div class={["manga", { isLoser: match.winner == 'b', isWinner: match.winner == 'a'}]}>
+            <img class="cover" src="/manga/revealed/{a.image}" alt="a manga" />
+        </div>
+        <div class={["manga", { isLoser: match.winner == 'a', isWinner: match.winner == 'b'}]}>
+            <img class="cover" src="/manga/revealed/{b.image}" alt="a manga" />
+        </div>
     </div>
-    <div class={['manga', { isLoser: b.isEliminated, isWinner: !b.isEliminated }]}>
-        <img class="cover" src="/manga/revealed/{b.image}" alt="a manga" />
-    </div>
-</div>
+{/if}
 
 <style>
     .clash-result {
@@ -60,7 +65,11 @@
             transform: translate(-50%, -50%);
             width: 180%;
             height: 20px;
-            background: radial-gradient(ellipse 100% 100%, var(--color-cyan), transparent 50%);
+            background: radial-gradient(
+                ellipse 100% 100%,
+                var(--color-cyan),
+                transparent 50%
+            );
             background-size: 100% 100%;
             z-index: -1;
             opacity: 0.5;
@@ -109,7 +118,7 @@
         transition: scale 1s ease;
 
         &:after {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -158,7 +167,9 @@
         border: none;
         filter: grayscale(0) brightness(1) contrast(1);
         scale: 0.85;
-        transition: filter 1s ease, scale 1s ease;
+        transition:
+            filter 1s ease,
+            scale 1s ease;
 
         .isVisible & {
             filter: grayscale(0.8) brightness(0.5) contrast(0.8);

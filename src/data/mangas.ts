@@ -55,20 +55,20 @@ const mangas: Manga[] = [
         "image": "a982b80e-ef85-4714-98f7-84425ccdfb2f.png",
         "silhouette": "53c6e791-06d2-47a6-b96a-1b65bc27c3f4.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "There's also a Hole in the Student Council",
         "image": "9cfa142c-7913-43b3-be0d-c033cffc8b96.jpg",
         "silhouette": "2ab1b8a9-e396-4182-ad43-9d2848569b3b.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
         "name": "The Cosmic Star That I Love",
         "image": "f738c7dc-dcac-42f6-80b2-1857c6ddf51a.jpg",
         "silhouette": "af02545e-7dd9-41c6-9c32-104f43f0a3cd.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {

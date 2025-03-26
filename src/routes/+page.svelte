@@ -8,7 +8,7 @@
     import Tournament from '../components/Tournament.svelte'
 
     import tournament from '../data/tournament'
-    import mangas from '../data/mangas'
+    import getMatchByBracketAndIndex from '../utils/Tournament/getMatchByBracketAndIndex'
 </script>
 
 <Hero />
@@ -48,7 +48,7 @@
 
 
 <div class="description">
-    <ClashResult a={mangas[0]} b={mangas[1]} />
+    <ClashResult match={getMatchByBracketAndIndex(tournament, 0, 0)} />
 
     <p>
         A decisive battle! Our very first Manga Clash started strong, pitting
@@ -68,7 +68,7 @@
 <Heading>Round 2</Heading>
 
 <div class="description">
-    <ClashResult a={mangas[2]} b={mangas[3]} />
+    <ClashResult match={getMatchByBracketAndIndex(tournament, 0, 1)} />
 
     <p>
         Back once again, and this time with a distinctly farmyard-themed Manga Clash!
@@ -92,7 +92,7 @@
 <Heading>Round 3</Heading>
 
 <div class="description">
-    <ClashResult a={mangas[4]} b={mangas[5]} />
+    <ClashResult match={getMatchByBracketAndIndex(tournament, 0, 2)} />
 
     <p>
         Round 3 of Manga Clash saw the comfy broadcasting-club coming-of-age
@@ -103,10 +103,35 @@
     <p>
         We found a lot to like in both of these titles. <b>Hana wa Saku, Shura
         no Gotoku</b> offered a cute premise, though its queer-baiting served as
-        both a blessing and a curse. <b>COSMOS<b> was compared, not unfavourably,
+        both a blessing and a curse. <b>COSMOS</b> was compared, not unfavourably,
         to the first Men in Black movie, and ultimately its plot proved gripping
         enough that we were itching to find out what happens next. And so, it
         claimed victory, and ensured a spot in the next round!
+    </p>
+</div>
+
+<Heading>Round 4</Heading>
+
+<div class="description">
+    <ClashResult match={getMatchByBracketAndIndex(tournament, 0, 3)} />
+
+    <p>
+        With a name like <i>Kindergarten WARS</i>, you may be forgiven for assuming,
+        as we did, that there would be children fighting. Instead the focus on our
+        main character's quest for a cute boyfriend threw some off initially, but
+        also provided a good basis for some fun gags.
+    </p>
+    <p>
+        Meanwhile, <i>Shoukoku no Altair</i> posed a big contrast with its rather
+        involved plot, throwing complicated military manoeuvres and diplomatic
+        decisions at us with reckless abandon. Some felt it was confusing, but
+        we all appreciated its scale and tone.
+    </p>
+    <p>
+        It was a close one this week, with good offerings on both sides, but
+        <b>Kindergarten WARS</b> won out. That means we'll get to learn more about
+        the new character who was just introduced, and see the resolution of the
+        ending's cliffhanger!
     </p>
 </div>
 
