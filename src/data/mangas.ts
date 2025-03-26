@@ -62,7 +62,7 @@ const mangas: Manga[] = [
         "image": "9cfa142c-7913-43b3-be0d-c033cffc8b96.jpg",
         "silhouette": "2ab1b8a9-e396-4182-ad43-9d2848569b3b.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "The Cosmic Star That I Love",
@@ -75,14 +75,14 @@ const mangas: Manga[] = [
         "name": "Shrink ~Psychiatrist Yowai~",
         "image": "1c5328c7-8592-4515-9e64-619fd9ce00ee.jpg",
         "silhouette": "b2c81a5a-cfd6-472e-88cb-65f8d5ba5dbb.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
         "name": "The Color of the End Mission in the Apocalypse",
         "image": "2ef64b95-c4b8-4ca5-8555-9712b009f156.jpg",
         "silhouette": "caef5512-7226-4b60-b0af-cfa0088abe14.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {

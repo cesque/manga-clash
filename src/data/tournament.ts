@@ -44,6 +44,7 @@ const tournament: TournamentRound = {
                 type: 'match',
                 a: { type: 'seed', manga: mangas[8] },
                 b: { type: 'seed', manga: mangas[9] },
+                winner: 'b',
             },
             b: {
                 type: 'match',
