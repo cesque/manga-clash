@@ -135,6 +135,27 @@
     </p>
 </div>
 
+<Heading>Round 5</Heading>
+
+<div class="description">
+    <ClashResult match={getMatchByBracketAndIndex(tournament, 0, 4)} />
+
+    <p>
+        This week we battled <i>There's also a Hole in the Student Council</i>
+        against <i>The Cosmic Star That I Love</i>. The former, which was variously
+        called "<b>Student Council</b>" or just "<b>the Holes one</b>" was a 4-koma, which posed
+        troublesome for some. Reactions to its level of lewdity were mixed, with
+        some objecting and some thinking that it wasn't as bad as the covers promised!
+    </p>
+
+    <p>
+        As for <b>Cosmic Star</b>, its slower start and mildly-annoying love triangle
+        gave way to enjoyable characters and amusing scenarios. Plus the main character
+        has permanent heart eyes and a dumb little crown! With reactions to <b>Holes</b>
+        mixed, <b>Cosmic Star</b> took the win this week, advancing to the second round of the bracket.
+    </p>
+</div>
+
 <Footer />
 
 <style>
