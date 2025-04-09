@@ -79,7 +79,7 @@ const mangas: Manga[] = [
         "isEliminated": false
     },
     {
-        "name": "The Color of the End Mission in the Apocalypse",
+        "name": "The Color of the End - Mission in the Apocalypse",
         "image": "2ef64b95-c4b8-4ca5-8555-9712b009f156.jpg",
         "silhouette": "caef5512-7226-4b60-b0af-cfa0088abe14.png",
         "isRevealed": true,
