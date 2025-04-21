@@ -76,7 +76,7 @@ const mangas: Manga[] = [
         "image": "1c5328c7-8592-4515-9e64-619fd9ce00ee.jpg",
         "silhouette": "b2c81a5a-cfd6-472e-88cb-65f8d5ba5dbb.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "The Color of the End - Mission in the Apocalypse",
@@ -89,28 +89,28 @@ const mangas: Manga[] = [
         "name": "Mr. Yano's Ordinary Days",
         "image": "15521a22-3263-4709-8d76-10f8013ae5eb.png",
         "silhouette": "d46462cc-1ed0-4594-ae04-53396dd0ed9a.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
         "name": "MF Ghost",
         "image": "bf36f30d-b0d9-46a2-8b6f-b7e407c5bfd0.png",
         "silhouette": "d5010530-55c6-49cc-9aa1-9cfe8e1cc9aa.png",
-        "isRevealed": false,
-        "isEliminated": false
+        "isRevealed": true,
+        "isEliminated": true
     },
     {
         "name": "Star Tripper Planetarium Ghost Travel",
         "image": "0ff8664b-ce37-4653-b322-4f49cb9cf4ae.png",
         "silhouette": "c1a38059-4ae4-43fb-aa91-349a86d35685.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     },
     {
         "name": "Cats at Work",
         "image": "ea6eedc6-8bf9-4f3a-ad82-0f27ee1aa95b.jpg",
         "silhouette": "45c14ae6-4bd1-4e50-9481-d29ac73c9171.png",
-        "isRevealed": false,
+        "isRevealed": true,
         "isEliminated": false
     }
 ]
