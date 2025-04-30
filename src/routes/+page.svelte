@@ -156,6 +156,71 @@
     </p>
 </div>
 
+<Heading>Round 6</Heading>
+
+<div class="description">
+    <ClashResult match={getMatchByBracketAndIndex(tournament, 0, 5)} />
+
+    <p>
+        In round 6, we learned about mental health with <i>Shrink ~Psychiatrist
+        Yowai~</i> and explored the dying world of <i>The Color of the
+        End - Mission in the Apocalypse</i>! 
+    </p>
+
+    <p>
+        <b>Shrink</b> was inoffensive, but its educational approach didn't inspire,
+        even though we thought its existence was beneficial and appreciated.
+        <b>Color of the End</b> inspired a healthy discussion over the our
+        interpretations of the tone. Is it depressing? Is it comfy? Ultimately,
+        we saw <b>Color of the End</b> progress through to the next round.
+    </p>
+</div>
+
+<Heading>Round 7</Heading>
+
+<div class="description">
+    <ClashResult match={getMatchByBracketAndIndex(tournament, 0, 6)} />
+
+    <p>
+        This week saw the introduction of <i>Mr. Yano's Ordinary Days</i>, a rom-com
+        focusing on the world's clumsiest boy (sorry Hexi, you've been outranked). Despite
+        <em>some</em> people's annoyance of the titular Yano, overall we found it very cute
+        and compelling.
+    </p>
+
+    <p>
+        On the other side of the ring, <i>MF Ghost</i> spun a tale about a half-British,
+        half-Japanese wannabe racecar driver. It was also somewhat of a romance but
+        this time with way more cars. The council was not kind to <b>MF Ghost</b><span class="asterisk">*</span>, with its
+        art style provoking discomfort and its story largely not gripping readers, meaning that
+        <b>Mr. Yano</b> proceeds onwards.
+    </p>
+
+    <p class="footnote">* Though one auxilary council member seemed to really enjoy it.</p>
+</div>
+
+<Heading>Round 8</Heading>
+
+<div class="description">
+    <ClashResult match={getMatchByBracketAndIndex(tournament, 0, 7)} />
+
+    <p>
+        The final clash of the initial round! That means that we met our final two
+        competitors: the spacey iyashikei <i>Star Tripper: Planetarium Ghost Travel</i>
+        and 'Osmosis Jones but with catboys' <i>Cells at Work: Cats</i>. And, somewhat
+        excitingly for our last new manga to be introduced, this one was perhaps the closest
+        call of all.
+    </p>
+
+    <p>
+        <b>Cats</b> steered itself variously between 'cute slice of life about sometimes-ill cat',
+        and 'surprisingly educational information about cat biology'. There was a lot of
+        information about the types of different cells! <b>Star Tripper</b> was a bit divisive,
+        but ended up taking the final win of this round, despite some misgivings about
+        its thoughtful (or, perhaps, plodding) pace.
+    </p>
+</div>
+
 <Footer />
 
 <style>

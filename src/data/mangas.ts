@@ -20,7 +20,7 @@ const mangas: Manga[] = [
         "image": "ccaf2145-38ac-4e16-a45c-f6fcce3f91fa.jpg",
         "silhouette": "0a2b51c6-032b-4d1c-967f-d8073f6ea87c.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "Sheeply Horned Witch Romi",
@@ -100,18 +100,18 @@ const mangas: Manga[] = [
         "isEliminated": true
     },
     {
-        "name": "Star Tripper Planetarium Ghost Travel",
+        "name": "Star Tripper: Planetarium Ghost Travel",
         "image": "0ff8664b-ce37-4653-b322-4f49cb9cf4ae.png",
         "silhouette": "c1a38059-4ae4-43fb-aa91-349a86d35685.png",
         "isRevealed": true,
         "isEliminated": false
     },
     {
-        "name": "Cats at Work",
+        "name": "Cells at Work: Cats",
         "image": "ea6eedc6-8bf9-4f3a-ad82-0f27ee1aa95b.jpg",
         "silhouette": "45c14ae6-4bd1-4e50-9481-d29ac73c9171.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     }
 ]
 
