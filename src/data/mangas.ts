@@ -48,7 +48,7 @@ const mangas: Manga[] = [
         "image": "f1fea6ac-d4fd-46d4-bd7f-b3f2d7b2d9ab.jpg",
         "silhouette": "b2c4924d-d765-4b1b-be79-e8d814a8d70c.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "Shoukoku no Altair",
