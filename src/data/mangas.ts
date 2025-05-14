@@ -83,7 +83,7 @@ const mangas: Manga[] = [
         "image": "2ef64b95-c4b8-4ca5-8555-9712b009f156.jpg",
         "silhouette": "caef5512-7226-4b60-b0af-cfa0088abe14.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "Mr. Yano's Ordinary Days",
