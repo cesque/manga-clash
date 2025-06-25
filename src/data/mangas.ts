@@ -34,7 +34,7 @@ const mangas: Manga[] = [
         "image": "bd4bfb51-a057-4e38-88b2-042006337c9a.jpg",
         "silhouette": "8e4dbf7e-720c-4cca-b0c5-2ca7e4680790.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "Hana wa Saku, Shura no Gotoku",
@@ -90,7 +90,7 @@ const mangas: Manga[] = [
         "image": "15521a22-3263-4709-8d76-10f8013ae5eb.png",
         "silhouette": "d46462cc-1ed0-4594-ae04-53396dd0ed9a.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "MF Ghost",
@@ -104,7 +104,7 @@ const mangas: Manga[] = [
         "image": "0ff8664b-ce37-4653-b322-4f49cb9cf4ae.png",
         "silhouette": "c1a38059-4ae4-43fb-aa91-349a86d35685.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "Cells at Work: Cats",
