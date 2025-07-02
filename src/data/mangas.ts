@@ -69,7 +69,7 @@ const mangas: Manga[] = [
         "image": "f738c7dc-dcac-42f6-80b2-1857c6ddf51a.jpg",
         "silhouette": "af02545e-7dd9-41c6-9c32-104f43f0a3cd.png",
         "isRevealed": true,
-        "isEliminated": false
+        "isEliminated": true
     },
     {
         "name": "Shrink ~Psychiatrist Yowai~",

@@ -75,6 +75,7 @@ const tournament: TournamentRound = {
         },
         winner: 'a',
     },
+    winner: 'a',
 }
 
 export default tournament
